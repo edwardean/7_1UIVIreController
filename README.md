@@ -164,15 +164,21 @@ ZHFirstSubViewController为第一个控制器，视图为A，ZHSecondViewControl
 `根据上面的现象能得出如下结论`
 
 1.在视图第一次创建时从loadView方法开始，然后依次是 -viewDidLoad ,-viewWillAppear ,-viewDidAppear
+
 2.在视图消失但并不被移除时方法执行顺序：-viewWillDisappear ,-viewDidDisappear
-3.在A消失的同时显示B的过程中执行顺序是先构造B的view（-loadView），然后调用B的viewDidLoad方法，接着向A视图发送viewWillDisappear消息，再接着向B发送viewWillAppear消息，再接着向A发送viewDidDisappear消息，最后B完全显示（viewDidAppear）
+
+3.在A消失的同时显示B的过程中执行顺序是先构造B的view（-loadView），然后调用B的viewDidLoad方法，接着向A视图发送
+viewWillDisappear消息，再接着向B发送viewWillAppear消息，再接着向A发送viewDidDisappear消息，最后B完全显示（viewDidAppear）
+
 4.从B再回到视图A过程时先通知B视图即将消失viewWillDisappear,然后向A发送viewWillAppear消息，接着B完全消失（viewDidDisappear:），最后A显示出来（viewDidAppear）
+
 5.从A回到父视图时比较简单先发送viewWillDisappear消息，再发送viewDidDisappear消息然后A视图就消失
 
 
 * 第二次
 
 6.第二次再重复第一次时少了构造两个视图的步骤，没有再调用loadView方法和viewDidLoad方法
+
 7.在收到内存警告后会调用viewDidUnload方法，如果视图当前不再显示那么就会被释放掉，下次再加载显示时会跟第一次的情况相同会再次调用loadView和viewDidLoad方法先构造该视图让后再进行加载显示
 
 
