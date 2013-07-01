@@ -30,30 +30,42 @@ ZHFirstSubViewController为第一个控制器，视图为A，ZHSecondViewControl
 * `第一次从父视图加载A视图时日志如下：`
 
 2013-07-01 18:06:07.038 7_1UIViewController[6617:907] -[ZHFirstSubViewController loadView]
+
 2013-07-01 18:06:07.040 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewDidLoad]
+
 2013-07-01 18:06:07.041 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewWillAppear:]
+
 2013-07-01 18:06:07.463 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewDidAppear:]
 
 
 * `第一次再加载视图B，日志如下：`
 
 2013-07-01 18:06:26.857 7_1UIViewController[6617:907] -[ZHSecondViewController loadView]
+
 2013-07-01 18:06:26.858 7_1UIViewController[6617:907] -[ZHSecondViewController viewDidLoad]
+
 2013-07-01 18:06:26.859 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewWillDisappear:]
+
 2013-07-01 18:06:26.860 7_1UIViewController[6617:907] -[ZHSecondViewController viewWillAppear:]
+
 2013-07-01 18:06:27.284 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewDidDisappear:]
+
 2013-07-01 18:06:27.284 7_1UIViewController[6617:907] -[ZHSecondViewController viewDidAppear:]
 
 * `从B返回到A视图，日志如下：`
 
 2013-07-01 18:06:43.692 7_1UIViewController[6617:907] -[ZHSecondViewController viewWillDisappear:]
+
 2013-07-01 18:06:43.693 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewWillAppear:]
+
 2013-07-01 18:06:44.118 7_1UIViewController[6617:907] -[ZHSecondViewController viewDidDisappear:]
+
 2013-07-01 18:06:44.118 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewDidAppear:]
 
 * `从A返回到父视图：`
 
 2013-07-01 18:07:07.279 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewWillDisappear:]
+
 2013-07-01 18:07:07.705 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewDidDisappear:]
 
 
@@ -64,59 +76,87 @@ ZHFirstSubViewController为第一个控制器，视图为A，ZHSecondViewControl
 * `第二次从父视图加载A`
 
 2013-07-01 18:07:30.721 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewWillAppear:]
+
 2013-07-01 18:07:31.142 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewDidAppear:]
 
 * `第二次从A到B：`
 
 2013-07-01 18:07:45.952 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewWillDisappear:]
+
 2013-07-01 18:07:45.952 7_1UIViewController[6617:907] -[ZHSecondViewController viewWillAppear:]
+
 2013-07-01 18:07:46.375 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewDidDisappear:]
+
 2013-07-01 18:07:46.376 7_1UIViewController[6617:907] -[ZHSecondViewController viewDidAppear:]
 
 * `第二次从B返回A`
 
 2013-07-01 18:08:03.387 7_1UIViewController[6617:907] -[ZHSecondViewController viewWillDisappear:]
+
 2013-07-01 18:08:03.388 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewWillAppear:]
+
 2013-07-01 18:08:03.813 7_1UIViewController[6617:907] -[ZHSecondViewController viewDidDisappear:]
+
 2013-07-01 18:08:03.813 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewDidAppear:]
 
 * `第二次从A返回到父视图`
 
 2013-07-01 18:08:19.032 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewWillDisappear:]
+
 2013-07-01 18:08:19.454 7_1UIViewController[6617:907] -[ZHFirstSubViewController viewDidDisappear:]
 
 在父视图下模拟内存警告后日志如下：
 ---
 
 2013-07-01 18:11:00.421 7_1UIViewController[6679:907] Received memory warning.
+
 2013-07-01 18:11:00.421 7_1UIViewController[6679:907] -[ZHFirstSubViewController didReceiveMemoryWarning]
+
 2013-07-01 18:11:00.421 7_1UIViewController[6679:907] -[ZHSecondViewController didReceiveMemoryWarning]
+
 2013-07-01 18:11:00.422 7_1UIViewController[6679:907] -[ZHFirstSubViewController didReceiveMemoryWarning]
+
 2013-07-01 18:11:00.423 7_1UIViewController[6679:907] -[ZHFirstSubViewController viewDidUnload]
+
 2013-07-01 18:11:00.423 7_1UIViewController[6679:907] -[ZHSecondViewController didReceiveMemoryWarning]
+
 2013-07-01 18:11:00.424 7_1UIViewController[6679:907] -[ZHSecondViewController viewDidUnload]
 
 在A视图下模拟内存警告后日志如下：
 ---
 
 2013-07-01 18:15:04.079 7_1UIViewController[6679:907] Received memory warning.
+
 2013-07-01 18:15:04.079 7_1UIViewController[6679:907] -[ZHFirstSubViewController didReceiveMemoryWarning]
+
 2013-07-01 18:15:04.080 7_1UIViewController[6679:907] -[ZHSecondViewController didReceiveMemoryWarning]
+
 2013-07-01 18:15:04.080 7_1UIViewController[6679:907] -[ZHFirstSubViewController didReceiveMemoryWarning]
+
 2013-07-01 18:15:04.081 7_1UIViewController[6679:907] -[ZHSecondViewController didReceiveMemoryWarning]
+
 2013-07-01 18:15:04.082 7_1UIViewController[6679:907] -[ZHSecondViewController viewDidUnload]
+
 2013-07-01 18:15:04.082 7_1UIViewController[6679:907] -[ZHFirstSubViewController didReceiveMemoryWarning]
+
 2013-07-01 18:15:04.083 7_1UIViewController[6679:907] -[ZHSecondViewController didReceiveMemoryWarning]
 
 在B视图下模拟内存警告后日志如下：
 ---
 2013-07-01 18:15:56.891 7_1UIViewController[6679:907] Received memory warning.
+
 2013-07-01 18:15:56.891 7_1UIViewController[6679:907] -[ZHFirstSubViewController didReceiveMemoryWarning]
+
 2013-07-01 18:15:56.892 7_1UIViewController[6679:907] -[ZHSecondViewController didReceiveMemoryWarning]
+
 2013-07-01 18:15:56.892 7_1UIViewController[6679:907] -[ZHFirstSubViewController didReceiveMemoryWarning]
+
 2013-07-01 18:15:56.893 7_1UIViewController[6679:907] -[ZHFirstSubViewController viewDidUnload]
+
 2013-07-01 18:15:56.893 7_1UIViewController[6679:907] -[ZHSecondViewController didReceiveMemoryWarning]
+
 2013-07-01 18:15:56.894 7_1UIViewController[6679:907] -[ZHFirstSubViewController didReceiveMemoryWarning]
+
 2013-07-01 18:15:56.894 7_1UIViewController[6679:907] -[ZHSecondViewController didReceiveMemoryWarning]
 
 
