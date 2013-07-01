@@ -71,7 +71,8 @@
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
+  LOG;
+  [super didReceiveMemoryWarning];
 }
 
 @end
