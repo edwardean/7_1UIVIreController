@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0BD1821781659B00A799E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0BD1751781659B00A799E7 /* main.m */; };
+		CA0BD1831781659B00A799E7 /* ZHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0BD1771781659B00A799E7 /* ZHAppDelegate.m */; };
+		CA0BD1841781659B00A799E7 /* ZHFirstSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0BD1791781659B00A799E7 /* ZHFirstSubView.m */; };
+		CA0BD1851781659B00A799E7 /* ZHFirstSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0BD17B1781659B00A799E7 /* ZHFirstSubViewController.m */; };
+		CA0BD1861781659B00A799E7 /* ZHSecondSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0BD17D1781659B00A799E7 /* ZHSecondSubView.m */; };
+		CA0BD1871781659B00A799E7 /* ZHSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0BD17F1781659B00A799E7 /* ZHSecondViewController.m */; };
+		CA0BD1881781659B00A799E7 /* ZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0BD1811781659B00A799E7 /* ZHViewController.m */; };
 		CAF59E1B17815471002FE87D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF59E1A17815471002FE87D /* UIKit.framework */; };
 		CAF59E1D17815471002FE87D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF59E1C17815471002FE87D /* Foundation.framework */; };
 		CAF59E1F17815471002FE87D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF59E1E17815471002FE87D /* CoreGraphics.framework */; };
-		CAF59E2517815471002FE87D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAF59E2317815471002FE87D /* InfoPlist.strings */; };
-		CAF59E2717815471002FE87D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF59E2617815471002FE87D /* main.m */; };
-		CAF59E2B17815471002FE87D /* ZHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF59E2A17815471002FE87D /* ZHAppDelegate.m */; };
-		CAF59E2D17815471002FE87D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF59E2C17815471002FE87D /* Default.png */; };
-		CAF59E2F17815471002FE87D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF59E2E17815471002FE87D /* Default@2x.png */; };
-		CAF59E3117815471002FE87D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF59E3017815471002FE87D /* Default-568h@2x.png */; };
 		CAF59E3917815471002FE87D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF59E3817815471002FE87D /* SenTestingKit.framework */; };
 		CAF59E3A17815471002FE87D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF59E1A17815471002FE87D /* UIKit.framework */; };
 		CAF59E3B17815471002FE87D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF59E1C17815471002FE87D /* Foundation.framework */; };
 		CAF59E4317815471002FE87D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAF59E4117815471002FE87D /* InfoPlist.strings */; };
 		CAF59E4617815471002FE87D /* __1UIViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF59E4517815471002FE87D /* __1UIViewControllerTests.m */; };
-		CAF59E5117815489002FE87D /* ZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF59E5017815489002FE87D /* ZHViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,27 +35,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA0BD1741781659B00A799E7 /* 7_1UIViewController-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "7_1UIViewController-Prefix.pch"; path = "7_1UIViewController/7_1UIViewController-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		CA0BD1751781659B00A799E7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = 7_1UIViewController/main.m; sourceTree = SOURCE_ROOT; };
+		CA0BD1761781659B00A799E7 /* ZHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHAppDelegate.h; path = 7_1UIViewController/ZHAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		CA0BD1771781659B00A799E7 /* ZHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHAppDelegate.m; path = 7_1UIViewController/ZHAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		CA0BD1781781659B00A799E7 /* ZHFirstSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHFirstSubView.h; path = 7_1UIViewController/ZHFirstSubView.h; sourceTree = SOURCE_ROOT; };
+		CA0BD1791781659B00A799E7 /* ZHFirstSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHFirstSubView.m; path = 7_1UIViewController/ZHFirstSubView.m; sourceTree = SOURCE_ROOT; };
+		CA0BD17A1781659B00A799E7 /* ZHFirstSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHFirstSubViewController.h; path = 7_1UIViewController/ZHFirstSubViewController.h; sourceTree = SOURCE_ROOT; };
+		CA0BD17B1781659B00A799E7 /* ZHFirstSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHFirstSubViewController.m; path = 7_1UIViewController/ZHFirstSubViewController.m; sourceTree = SOURCE_ROOT; };
+		CA0BD17C1781659B00A799E7 /* ZHSecondSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHSecondSubView.h; path = 7_1UIViewController/ZHSecondSubView.h; sourceTree = SOURCE_ROOT; };
+		CA0BD17D1781659B00A799E7 /* ZHSecondSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHSecondSubView.m; path = 7_1UIViewController/ZHSecondSubView.m; sourceTree = SOURCE_ROOT; };
+		CA0BD17E1781659B00A799E7 /* ZHSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHSecondViewController.h; path = 7_1UIViewController/ZHSecondViewController.h; sourceTree = SOURCE_ROOT; };
+		CA0BD17F1781659B00A799E7 /* ZHSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHSecondViewController.m; path = 7_1UIViewController/ZHSecondViewController.m; sourceTree = SOURCE_ROOT; };
+		CA0BD1801781659B00A799E7 /* ZHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHViewController.h; path = 7_1UIViewController/ZHViewController.h; sourceTree = SOURCE_ROOT; };
+		CA0BD1811781659B00A799E7 /* ZHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHViewController.m; path = 7_1UIViewController/ZHViewController.m; sourceTree = SOURCE_ROOT; };
 		CAF59E1717815471002FE87D /* 7_1UIViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 7_1UIViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF59E1A17815471002FE87D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CAF59E1C17815471002FE87D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CAF59E1E17815471002FE87D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CAF59E2217815471002FE87D /* 7_1UIViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "7_1UIViewController-Info.plist"; sourceTree = "<group>"; };
-		CAF59E2417815471002FE87D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CAF59E2617815471002FE87D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CAF59E2817815471002FE87D /* 7_1UIViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "7_1UIViewController-Prefix.pch"; sourceTree = "<group>"; };
-		CAF59E2917815471002FE87D /* ZHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHAppDelegate.h; sourceTree = "<group>"; };
-		CAF59E2A17815471002FE87D /* ZHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAppDelegate.m; sourceTree = "<group>"; };
-		CAF59E2C17815471002FE87D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CAF59E2E17815471002FE87D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CAF59E3017815471002FE87D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CAF59E3717815471002FE87D /* 7_1UIViewControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 7_1UIViewControllerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF59E3817815471002FE87D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CAF59E4017815471002FE87D /* 7_1UIViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "7_1UIViewControllerTests-Info.plist"; sourceTree = "<group>"; };
 		CAF59E4217815471002FE87D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CAF59E4417815471002FE87D /* __1UIViewControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = __1UIViewControllerTests.h; sourceTree = "<group>"; };
 		CAF59E4517815471002FE87D /* __1UIViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __1UIViewControllerTests.m; sourceTree = "<group>"; };
-		CAF59E4F17815489002FE87D /* ZHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHViewController.h; sourceTree = "<group>"; };
-		CAF59E5017815489002FE87D /* ZHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +85,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0BD18A178165AC00A799E7 /* 7_1UIVIewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA0BD1761781659B00A799E7 /* ZHAppDelegate.h */,
+				CA0BD1771781659B00A799E7 /* ZHAppDelegate.m */,
+				CA0BD1801781659B00A799E7 /* ZHViewController.h */,
+				CA0BD1811781659B00A799E7 /* ZHViewController.m */,
+				CA0BD18B178165CF00A799E7 /* DemoViewController */,
+			);
+			name = 7_1UIVIewController;
+			sourceTree = "<group>";
+		};
+		CA0BD18B178165CF00A799E7 /* DemoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA0BD18C1781824400A799E7 /* FirstView */,
+				CA0BD18D1781825300A799E7 /* SecondView */,
+			);
+			name = DemoViewController;
+			sourceTree = "<group>";
+		};
+		CA0BD18C1781824400A799E7 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				CA0BD1781781659B00A799E7 /* ZHFirstSubView.h */,
+				CA0BD1791781659B00A799E7 /* ZHFirstSubView.m */,
+				CA0BD17A1781659B00A799E7 /* ZHFirstSubViewController.h */,
+				CA0BD17B1781659B00A799E7 /* ZHFirstSubViewController.m */,
+			);
+			name = FirstView;
+			sourceTree = "<group>";
+		};
+		CA0BD18D1781825300A799E7 /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				CA0BD17C1781659B00A799E7 /* ZHSecondSubView.h */,
+				CA0BD17D1781659B00A799E7 /* ZHSecondSubView.m */,
+				CA0BD17E1781659B00A799E7 /* ZHSecondViewController.h */,
+				CA0BD17F1781659B00A799E7 /* ZHSecondViewController.m */,
+			);
+			name = SecondView;
+			sourceTree = "<group>";
+		};
 		CAF59E0E17815471002FE87D = {
 			isa = PBXGroup;
 			children = (
-				CAF59E2017815471002FE87D /* 7_1UIViewController */,
+				CA0BD18A178165AC00A799E7 /* 7_1UIVIewController */,
 				CAF59E3E17815471002FE87D /* 7_1UIViewControllerTests */,
 				CAF59E1917815471002FE87D /* Frameworks */,
 				CAF59E1817815471002FE87D /* Products */,
@@ -112,35 +158,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CAF59E2017815471002FE87D /* 7_1UIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CAF59E2917815471002FE87D /* ZHAppDelegate.h */,
-				CAF59E2A17815471002FE87D /* ZHAppDelegate.m */,
-				CAF59E4F17815489002FE87D /* ZHViewController.h */,
-				CAF59E5017815489002FE87D /* ZHViewController.m */,
-				CAF59E2117815471002FE87D /* Supporting Files */,
-			);
-			path = 7_1UIViewController;
-			sourceTree = "<group>";
-		};
-		CAF59E2117815471002FE87D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CAF59E2217815471002FE87D /* 7_1UIViewController-Info.plist */,
-				CAF59E2317815471002FE87D /* InfoPlist.strings */,
-				CAF59E2617815471002FE87D /* main.m */,
-				CAF59E2817815471002FE87D /* 7_1UIViewController-Prefix.pch */,
-				CAF59E2C17815471002FE87D /* Default.png */,
-				CAF59E2E17815471002FE87D /* Default@2x.png */,
-				CAF59E3017815471002FE87D /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		CAF59E3E17815471002FE87D /* 7_1UIViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
+				CA0BD1741781659B00A799E7 /* 7_1UIViewController-Prefix.pch */,
+				CA0BD1751781659B00A799E7 /* main.m */,
 				CAF59E4417815471002FE87D /* __1UIViewControllerTests.h */,
 				CAF59E4517815471002FE87D /* __1UIViewControllerTests.m */,
 				CAF59E3F17815471002FE87D /* Supporting Files */,
@@ -229,10 +251,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF59E2517815471002FE87D /* InfoPlist.strings in Resources */,
-				CAF59E2D17815471002FE87D /* Default.png in Resources */,
-				CAF59E2F17815471002FE87D /* Default@2x.png in Resources */,
-				CAF59E3117815471002FE87D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF59E2717815471002FE87D /* main.m in Sources */,
-				CAF59E2B17815471002FE87D /* ZHAppDelegate.m in Sources */,
-				CAF59E5117815489002FE87D /* ZHViewController.m in Sources */,
+				CA0BD1821781659B00A799E7 /* main.m in Sources */,
+				CA0BD1831781659B00A799E7 /* ZHAppDelegate.m in Sources */,
+				CA0BD1841781659B00A799E7 /* ZHFirstSubView.m in Sources */,
+				CA0BD1851781659B00A799E7 /* ZHFirstSubViewController.m in Sources */,
+				CA0BD1861781659B00A799E7 /* ZHSecondSubView.m in Sources */,
+				CA0BD1871781659B00A799E7 /* ZHSecondViewController.m in Sources */,
+				CA0BD1881781659B00A799E7 /* ZHViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,14 +314,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CAF59E2317815471002FE87D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAF59E2417815471002FE87D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		CAF59E4117815471002FE87D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,7 +350,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -360,7 +374,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -442,6 +456,7 @@
 				CAF59E4B17815471002FE87D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAF59E4C17815471002FE87D /* Build configuration list for PBXNativeTarget "7_1UIViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +465,7 @@
 				CAF59E4E17815471002FE87D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
