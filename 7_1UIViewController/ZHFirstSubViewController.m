@@ -26,13 +26,13 @@
     return self;
 }
 
-- (void)setView:(UIView *)view
-{
-  LOG;
-  if (self.view != view) {
-    self.view = view;
-  }
-}
+//- (void)setView:(UIView *)view
+//{
+//  LOG;
+//  if (self.view != view) {
+//    self.view = view;
+//  }
+//}
 
 //- (UIView *)view
 //{

@@ -170,6 +170,7 @@ ZHFirstSubViewController为第一个控制器，视图为A，ZHSecondViewControl
 总结
 ====
 `根据上面的现象能得出如下结论`
+* 第一次加载
 
 1.在视图第一次创建时从loadView方法开始，然后依次是 -viewDidLoad ,-viewWillAppear ,-viewDidAppear
 
@@ -183,7 +184,7 @@ viewWillDisappear消息，再接着向B发送viewWillAppear消息，再接着向
 5.从A回到父视图时比较简单先发送viewWillDisappear消息，再发送viewDidDisappear消息然后A视图就消失
 
 
-* 第二次
+* 第二次加载
 
 6.第二次再重复第一次时少了构造两个视图的步骤，没有再调用loadView方法和viewDidLoad方法
 
