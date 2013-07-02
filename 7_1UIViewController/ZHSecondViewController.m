@@ -22,6 +22,21 @@
     }
     return self;
 }
+
+//- (void)setView:(UIView *)view
+//{
+//  LOG;
+//  if (_view != view) {
+//    self.view = view;
+//  }
+//}
+//
+//- (UIView *)view
+//{
+//  LOG;
+//  return self.view;
+//}
+
 - (void)loadView
 {
   LOG;

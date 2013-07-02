@@ -19,6 +19,13 @@ Proj:7_1UIViewController
 	* 在内存警告后视图在哪里进行重建的问题
 	* 在父视图中添加过多的SubView会带来的问题（尝试替代用drawRect方法实现）
 	
+	
+### 测试时发现无法重写view的set方法，导致无法编译；重写get方法时陷入无限循环中 :(
+![](./1.png "set方法无法通过编译")
+
+![](./2.png "get方法无限循环")
+
+	
 ZHFirstSubViewController为第一个控制器，视图为A，ZHSecondViewController为第二个控制器，视图为B.
 ---
 
