@@ -16,14 +16,15 @@
 
 @implementation ZHFirstSubViewController
 
-#pragma view life cycle
+#pragma mark - life cycle
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+	if (self) {
+		// Custom initialization
+	}
+	return self;
 }
 
 //- (void)setView:(UIView *)view
@@ -42,22 +43,22 @@
 
 - (void)loadView
 {
-    LOG;
-    ZHFirstSubView *view = [[ZHFirstSubView alloc] initWithFrame:[[UIScreen   mainScreen] bounds]];
-    [view setBackgroundColor:[UIColor redColor]];
-    self.view = view;
+	LOG;
+	ZHFirstSubView *view = [[ZHFirstSubView alloc] initWithFrame:[[UIScreen   mainScreen] bounds]];
+	[view setBackgroundColor:[UIColor redColor]];
+	self.view = view;
 }
 - (void)viewDidLoad
 {
-    LOG;
-    [super viewDidLoad];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    self.navigationItem.rightBarButtonItem = barButtonItem;
-    SEL selector = NSSelectorFromString(@"pushSecondView");
-    if ([self respondsToSelector:selector]) {
-      [button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
-    }
+	LOG;
+	[super viewDidLoad];
+	UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+	UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+	self.navigationItem.rightBarButtonItem = barButtonItem;
+	SEL selector = NSSelectorFromString(@"pushSecondView");
+	if ([self respondsToSelector:selector]) {
+		[button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
+	}
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -96,15 +97,15 @@
   [super didReceiveMemoryWarning];
 }
 
+#pragma mark - view B
 
-#pragma push view B
 - (void)pushSecondView
 {
-    if (self.secondVC == nil) {
-      self.secondVC = [[ZHSecondViewController alloc] initWithNibName:nil
+	if (self.secondVC == nil) {
+		self.secondVC = [[ZHSecondViewController alloc] initWithNibName:nil
                                                              bundle:nil];
-    }
-    [self.navigationController pushViewController:_secondVC animated:YES];
-    _secondVC.title = @"B";
+	}
+	[self.navigationController pushViewController:_secondVC animated:YES];
+	_secondVC.title = @"B";
 }
 @end

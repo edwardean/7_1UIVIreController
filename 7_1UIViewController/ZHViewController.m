@@ -9,6 +9,7 @@
 #import "ZHViewController.h"
 #import "ZHFirstSubViewController.h"
 #import "ZHSecondViewController.h"
+
 @interface ZHViewController ()
 
 @property (nonatomic, retain) ZHFirstSubViewController *firstVC;
@@ -20,33 +21,33 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.title = @"RootViewController";
-    }
-    return self;
+	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+	if (self) {
+		self.title = @"RootViewController";
+	}
+	return self;
 }
 
-#pragma view life cycle
+#pragma mark - view life cycle
 
 /**
- If you access the view property and its valus is nil, the view controller 
+ If you access the view property and its valus is nil, the view controller
  automatically calls the loadview method and returns the resulting view;
  **/
 - (void)loadView
 {
-    self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.view setBackgroundColor:[UIColor whiteColor]];
+	self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	[self.view setBackgroundColor:[UIColor whiteColor]];
   
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button setFrame:CGRectMake(0, 0, 60, 35)];
-    [button setTitle:@"Tap" forState:UIControlStateNormal];
-    [button setCenter:self.view.center];
-    SEL selector = NSSelectorFromString(@"showSubViews");
-    if ([self respondsToSelector:selector]) {
-      [button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
-    }
-    [self.view addSubview:button];
+	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	[button setFrame:CGRectMake(0, 0, 60, 35)];
+	[button setTitle:@"Tap" forState:UIControlStateNormal];
+	[button setCenter:self.view.center];
+	SEL selector = NSSelectorFromString(@"showSubViews");
+	if ([self respondsToSelector:selector]) {
+		[button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
+	}
+	[self.view addSubview:button];
 }
 
 
@@ -55,8 +56,8 @@
   [super viewWillAppear:animated];
   /**
    Because accessing the view property can cause the view to be loaded automatically,
-   you can use the isViewLoaded method to determine if the view is currently in memory. 
-   Unlike this property, the isViewLoaded property does not force the loading of 
+   you can use the isViewLoaded method to determine if the view is currently in memory.
+   Unlike this property, the isViewLoaded property does not force the loading of
    the view if it is not currently in memory.
    **/
   if ([self isViewLoaded]) {
@@ -67,6 +68,10 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  if ([self isViewLoaded]) {
+    [self setWantsFullScreenLayout:NO];
+    NSLog(@"%s",__func__);
+  }
   
   ZHFirstSubViewController *firstVC = [[ZHFirstSubViewController alloc] initWithNibName:nil bundle:nil];
   [self addChildViewController:firstVC];
@@ -102,11 +107,11 @@
 - (void)didReceiveMemoryWarning
 {
   /**
-   The UIViewController class can automatically set the view property to nil during 
+   The UIViewController class can automatically set the view property to nil during
    low-memory conditions and also when the view controller itself is finally released.
    **/
   [super didReceiveMemoryWarning];
-    
+	
 }
 
 
@@ -116,6 +121,9 @@
   if (self.firstVC == nil) {
     self.firstVC = [[ZHFirstSubViewController alloc] initWithNibName:nil bundle:nil];
   }
+  
+  [self addChildViewController:_firstVC];
+  
   [[self navigationController] pushViewController:_firstVC animated:YES];
   _firstVC.title = @"A";
 }

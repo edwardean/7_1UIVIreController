@@ -8,6 +8,7 @@
 
 #import "ZHSecondViewController.h"
 #import "ZHSecondSubView.h"
+
 @interface ZHSecondViewController ()
 
 @end
@@ -16,11 +17,11 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+	if (self) {
+		// Custom initialization
+	}
+	return self;
 }
 
 //- (void)setView:(UIView *)view
