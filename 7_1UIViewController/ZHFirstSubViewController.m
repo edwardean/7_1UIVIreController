@@ -26,19 +26,19 @@
     return self;
 }
 
-//- (void)setView:(UIView *)view
-//{
-//  LOG;
-//  if (_view != view) {
-//    self.view = view;
-//  }
-//}
-
-- (UIView *)view
+- (void)setView:(UIView *)view
 {
   LOG;
-  return self.view;
+  if (self.view != view) {
+    self.view = view;
+  }
 }
+
+//- (UIView *)view
+//{
+//  LOG;
+//  return self.view;
+//}
 
 - (void)loadView
 {
